@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--===== BOOTSTRAP =====-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <!--===== JQUERY =====-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--===== FONT AWESOME =====-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!--===== SWIPER =====-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!--===== OWL CAROUSEL =====-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        <!--===== ANIMATE =====-->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="style.css">
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Go to Top -->
+        <div id="goTop" class='fas fa-angle-double-up'></div>
+            <!--Top Bar-->
+            <div class="topbar">
+                <div class="info">
+                    <i class="fas fa-envelope"></i><span>info@yourcompany.com</span>
+                    <i class="fas fa-phone"></i><span>Emergency Helpline: <b>+91 123 456-7890</b></span>
+                </div>
+                <div class="auth">
+                    <i class="fas fa-sign-in" aria-hidden="true"></i><span>Login</span> <span class='slash'>   /  </span>
+                    <i class="fas fa-user-plus" aria-hidden="true"></i><span>Register</span>
+                </div>
+            </div>
+            <section class="navigation">
+                <div class="nav-container">
+                    <div class="brand">
+                        <div class="video-container">
+                            <video autoplay loop muted>
+                                <source src="video.mp4" type="video/mp4">
+                            </video>
+                            <p>Astrology Mantras</p>
+                        </div>
+                    </div>
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#"><span></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <!-- Setting the links to # will ensure that no action takes place on click. -->
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services<i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="nav-dropdown">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Services Full page</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Forecast<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="#">Aries</a>
+                            </li>
+                            <li>
+                                <a href="#">Taurus</a>
+                            </li>
+                            <li>
+                                <a href="#">Gemini</a>
+                            </li>
+                            <li>
+                                <a href="#">Cancer</a>
+                            </li>
+                            <li>
+                                <a href="#">Leo</a>
+                            </li>                               
+                            <li>
+                                <a href="#">Virgo</a>
+                            </li>
+                            <li>
+                                <a href="#">Libro</a>
+                            </li>                                      
+                            <li>
+                                <a href="#">Scorpio</a>
+                            </li>
+                            <li>
+                                <a href="#">Sagittarius</a>
+                            </li>                            
+                            <li>
+                                <a href="#">Capricon</a>
+                            </li>
+                            <li>
+                                <a href="#">Aquarius</a>
+                            </li>
+                            <li>
+                                <a href="#">Pisces</a>
+                            </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="nav-dropdown">
+                                <li><a href="#">Products List</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Products Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog<i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#">Blog Grid</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog Grid View Left</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog Grid View Right</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <div class="wrapper">
+                <div class="centeredBox">
+                    <span id="typewriter" data-array=""></span>
+                    <span class="cursor"></span>
+                </div>
+            </div>
+            <!-- BACKGROUND VIDEO -->
+            <div class="videoContainer">
+                <video autoplay loop muted>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Carousel-->
+            <div class="slideshow-container">
+                <div class="mySlides fades">
+                    <img loading="lazy" src="carousel/slideshow_image_1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fades">
+                    <img loading="lazy" src="carousel/slideshow_image_2.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" style='color:#fff' onclick="plusSlides(-1)">❮</a>
+                <a class="next" style='color:#fff' onclick="plusSlides(1)">❯</a>
+                <div class='dots' style="text-align:center">
+                    <div class='udot'>
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                    </div>
+                    <div class="udot">
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                    </div>
+                </div>
+            </div> 
+            <div class="about">
+                <div class='aboutLeft'>
+                    <h1>Astrology Revels The Will Of God</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. or randomised words which don't look even slightly believable.</p>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                    <h4>Contact Us</h4>
+                    <div class="call"><i class="fas fa-volume-control-phone text-primary" aria-hidden="true"></i><span class='text-primary '>+91-123-456-7890</span></div>
+                    <button class='rm btn mt-3'>Read More</button>
+                </div>
+                <div class="aboutRight">
+                    <img loading="lazy" src='about_img.jpg' class='img-fluid'>
+                </div>
+            </div>
+            <div class='container-fluid choose'>
+                <div class='div'>
+                    <h1 class="text-center my-5">Choose Your Zodiac Sign</h1>
+                    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <p class="text-center">standard dummy text</p>
+                </div>
+                <div class="rows"> 
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon1.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Aries</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon2.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Taurus</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon3.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Gemini</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon4.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Cancer</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon5.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Leo</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon6.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Virgo</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon7.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Libra</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon8.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Scorpio</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon9.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Sagittairus</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon10.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Capricorn</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon11.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Aquarius</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                    <div class='cols'>
+                        <div class='ic'>
+                            <img loading="lazy" src="signs/icon12.png" class='img-fluid' style="width:100%">
+                        </div>
+                        <h3>Pisces</h3>
+                        <p>March 30 2020</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="wrapper">
+                <div class="text">
+                    <h1 class="text-center">Our Products</h1>
+                    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <p class="text-center">standard dummy text</p>    
+                </div>
+                <div class="outer">
+                    <div class="card" style="--delay:-1;">
+                        <div class="content">
+                            <div class="img">
+                                <img loading='lazy' src="products/products_01.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Olympus Photo Camera</h3>
+                                <p><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                </p>
+                                <p><a href="#">(4,585 ratings)</a></p>
+                                <p>$ 495.00 (17% off)</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="outer">
+                    <div class="card" style="--delay:0;">
+                        <div class="content">
+                            <div class="img">
+                                <img loading='lazy' src="products/products_02.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Olympus Photo Camera</h3>
+                                <p><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                </p>
+                                <p><a href="#">(4,585 ratings)</a></p>
+                                <p>$ 495.00 (17% off)</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="outer">
+                    <div class="card" style="--delay:1;">
+                        <div class="content">
+                            <div class="img">
+                                <img loading='lazy' src="products/products_03.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Olympus Photo Camera</h3>
+                                <p><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                </p>
+                                <p><a href="#">(4,585 ratings)</a></p>
+                                <p>$ 495.00 (17% off)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="outer">
+                    <div class="card" style="--delay:2;">
+                        <div class="content">
+                            <div class="img">
+                                <img loading='lazy' src="products/products_04.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Olympus Photo Camera</h3>
+                                <p><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                </p>
+                                <p><a href="#">(4,585 ratings)</a></p>
+                                <p>$ 495.00 (17% off)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="card" style="--delay:3;">
+                        <div class="content">
+                            <div class="img">
+                                <img loading='lazy' src="products/products_01.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Olympus Photo Camera</h3>
+                                <p><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                </p>
+                                <p><a href="#">(4,585 ratings)</a></p>
+                                <p>$ 495.00 (17% off)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="card" style="--delay:4;">
+                        <div class="content">
+                            <div class="img">
+                                <img loading='lazy' src="products/products_03.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h3>Olympus Photo Camera</h3>
+                                <p><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="active glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                </p>
+                                <p><a href="#">(4,585 ratings)</a></p>
+                                <p>$ 495.00 (17% off)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='works mt-5'>
+                <div class='container-fluid workLeft'>
+                    <h1>Our Astrologers Work For You</h1>
+                    <p>Our astrological team delivers daily and monthly horoscopes for all readers of our website visitors.</p>
+                    <p>Recognized as the best esoteric and astrology online in the USA. Every day we publish fresh horoscopes, articles by and for professional astrologers, personalized predictions, tarot readings, numerology and Chinese astrology horoscopes and much more.</p>
+                    <p>Our horoscopes can help you find a proper approach to solving all daily problems and achieving happiness in your life.</p>
+                </div>
+                <div class="workRight">
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="year">25</div>
+                            <div class="description">Years of Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="year">15</div>
+                            <div class="description">Types Of Horoscopes</div>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="year">17</div>
+                            <div class="description">Qualified Astrologers</div>
+                        </div>
+                        <div class="stat">
+                            <div class="year">1000</div>
+                            <div class="description">Hourly Visitors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='services'>
+                <div class="container-fluid text-center mt-3" style='padding:2rem 0'>
+                    <h1>Our Services</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <p>standard dummy text</p>    
+                </div>
+                <div class="service-box">
+                    <div class='service'>
+                        <div class="image">
+                            <img loading="lazy" src='services/services3.jpg' class='img-fluid'>
+                        </div>
+                        <div class="description">
+                            <a href='#'>Kundli Dosha</a>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply</p>
+                            <p>random text</p>
+                            <button class='ss'>Read More</button>
+                        </div>
+                    </div>
+                    <div class='service'>
+                        <div class="image">
+                            <img loading="lazy" src='services/services2.jpg' class='img-fluid'>
+                        </div>
+                        <div class="description">
+                            <a href='#'>Personal Consultation</a>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply</p>
+                            <p>random text</p>
+                            <button class='ss'>Read More</button>
+                        </div>
+                    </div>
+                    <div class='service'>
+                        <div class="image">
+                            <img loading="lazy" src='services/services1.jpg' class='img-fluid'>
+                        </div>
+                        <div class="description">
+                            <a href='#'>Face Reading</a>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply</p>
+                            <p>random text</p>
+                            <button class='ss'>Read More</button>
+                        </div>
+                    </div>
+                    <div class='service'>
+                        <div class="image">
+                            <img loading="lazy" src='services/services1.jpg' class='img-fluid'>
+                        </div>
+                        <div class="description">
+                            <a href='#'>Face Reading</a>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply</p>
+                            <p>random text</p>
+                            <button class='ss'>Read More</button>
+                        </div>
+                    </div>
+                    <div class='service'>
+                        <div class="image">
+                            <img loading="lazy" src='services/services3.jpg' class='img-fluid'>
+                        </div>
+                        <div class="description">
+                            <a href='#'>Kundli Dosha</a>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply</p>
+                            <p>random text</p>
+                            <button class='ss'>Read More</button>
+                        </div>
+                    </div>
+                    <div class='service'>
+                        <div class="image">
+                            <img loading="lazy" src='services/services2.jpg' class='img-fluid'>
+                        </div>
+                        <div class="description">
+                            <a href='#'>Personal Consultation</a>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply</p>
+                            <p>random text</p>
+                            <button class='ss'>Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid text-center mt-3" style='padding:2rem 0'>
+                <h1>What Clients Say</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+            <section class="testimonial_section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="about_content">
+                                <div class="background_layer"></div>
+                                <div class="layer_content">
+                                    <div class="section_title">
+                                        <h5>CLIENTS</h5>
+                                        <h2>Happy with<strong>Customers & Clients</strong></h2>
+                                        <div class="heading_line"><span></span></div>
+                                        <p>If you need any industrial solution we are available for you. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <a href="#">Contact Us<i class="icofont-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="testimonial_box">
+                                <div class="testimonial_container">
+                                    <div class="background_layer"></div>
+                                    <div class="layer_content">
+                                        <div class="testimonial_owlCarousel owl-carousel">
+                                            <div class="testimonials"> 
+                                                <div class="testimonial_content">
+                                                    <div class="testimonial_caption">
+                                                        <h6>Robert Clarkson</h6>
+                                                        <span>CEO, Axura</span>
+                                                    </div>
+                                                    <p>The team at Tectxon industry is very talented, dedicated, well organized and knowledgeable. I was most satisfied with the quality of the workmanship. They did excellent work.</p>
+                                                </div>
+                                                <div class="images_box">
+                                                    <div class="testimonial_img">
+                                                        <img class="img-center" src="https://cdn.pixabay.com/photo/2017/11/02/14/27/model-2911332__340.jpg" alt="images not found">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonials"> 
+                                                <div class="testimonial_content">
+                                                    <div class="testimonial_caption">
+                                                        <h6>Robert Clarkson</h6>
+                                                        <span>CEO, Axura</span>
+                                                    </div>
+                                                    <p>The team at Tectxon industry is very talented, dedicated, well organized and knowledgeable. I was most satisfied with the quality of the workmanship. They did excellent work.</p>
+                                                </div>
+                                                <div class="images_box">
+                                                    <div class="testimonial_img">
+                                                        <img class="img-center" src="https://media.istockphoto.com/photos/young-man-with-backpack-taking-selfie-portrait-on-a-mountain-smiling-picture-id1329031407?b=1&k=20&m=1329031407&s=170667a&w=0&h=J6qRqj9hbKtSVwIfMJhcRXf3AEyAOshph2IAbPHwNUo=" alt="images not found">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonials"> 
+                                                <div class="testimonial_content">
+                                                    <div class="testimonial_caption">
+                                                        <h6>Robert Clarkson</h6>
+                                                        <span>CEO, Axura</span>
+                                                    </div>
+                                                    <p>The team at Tectxon industry is very talented, dedicated, well organized and knowledgeable. I was most satisfied with the quality of the workmanship. They did excellent work.</p>
+                                                </div>
+                                                <div class="images_box">
+                                                    <div class="testimonial_img">
+                                                        <img class="img-center" src="https://cdn.pixabay.com/photo/2017/09/21/19/06/woman-2773007_960_720.jpg" alt="images not found">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container-fluid text-center mt-3" style="padding:2rem 0">
+                <h1>Our Blogs</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                <p>standard dummy text</p>    
+            </div>
+            <section class="blogs">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="blog" class="owl-carousel">
+                        <!--BLOG 1 -->
+                        <div class="item">
+                            <div class="blog-name">EMILIANO AQUILANI</div>
+                            <div class="shadow-effect">
+                                <img  loading='lazy' src="blogs/1.jpg" alt="">
+                                <a href='#'>Blog Header</a>
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                            </div>
+                        </div>
+                            <!--END OF BLOG 1 -->
+                            <!--BLOG 2 -->
+                            <div class="item">
+                                <div class="blog-name">ANNA ITURBE</div>
+                                <div class="shadow-effect">
+                                    <img  loading='lazy' src="blogs/2.jpg" alt="">
+                                    <a href='#'>Blog Header</a>
+                                    <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                                </div>
+                            </div>
+                            <!--END OF BLOG 2 -->
+                            <!--BLOG 3 -->
+                            <div class="item">
+                                <div class="blog-name">LARA ATKINSON</div>
+                                <div class="shadow-effect">
+                                <img  loading='lazy' src="blogs/3.jpg" alt="">
+                                <a href='#'>Blog Header</a>
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                            </div>
+                            </div>
+                            <!--END OF BLOG 3 -->
+                            <!--BLOG 4 -->
+                            <div class="item">
+                                <div class="blog-name">IAN OWEN</div>
+                                <div class="shadow-effect">
+                                <img  loading='lazy' src="blogs/1.jpg" alt="">
+                                <a href='#'>Blog Header</a>
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                            </div>
+                        </div>
+                        <!--END OF BLOG 4 -->
+                        <!--BLOG 5 -->
+                        <div class="item">
+                            <div class="blog-name">MICHAEL TEDDY</div>
+                            <div class="shadow-effect">
+                                <img  loading='lazy' src="blogs/2.jpg" alt="">
+                                <a href='#'>Blog Header</a>
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                            </div>
+                            </div>
+                            <!--END OF BLOG 5 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END OF BLOGS -->
+            <!-- START OF ADVANTAGES -->   
+            <div class='container text-center' style='padding:2rem 0'>
+                <h1>Advantages</h1>
+                <p>This is advantages section</p>
+            </div>
+            <div class="advantages">
+                <div class="cube">
+                    <div class="box1 box">
+                        <img src="cube/images (1).jpg">
+                    </div>
+                    <div class="box2 box">
+                        <img src="cube/images (2).jpg">
+                    </div>
+                    <div class="box3 box">
+                        <img src="cube/images (3).jpg">
+                    </div>
+                    <div class="box4 box">
+                        <img src="cube/images (4).jpg">
+                    </div>
+                    <div class="box5 box">
+                        <img src="cube/images (5).jpg">
+                    </div>
+                    <div class="box6 box">
+                        <img src="cube/images (6).jpg">
+                    </div>
+                </div>
+            </div> 
+            <div class='container text-center' style="padding:2rem 0">
+                <h1>Chat/Video Call</h1>
+                <p>This is Chat section</p>
+            </div>
+            <div class='chat'>
+                <div class="card">
+                    <img src="chat/alluarjun.jpg">
+                    <h1>Allu Arjun</h1>
+                    <div class="social-media-list">
+                        <div class="social-media">
+                            <span><i class="fab fa-instagram"></i></span>
+                            <span><p>17.5M</p></span><span><p>Followers</p></span>
+                        </div>
+                        <div class="social-media">
+                            <span><i class="fab fa-facebook-f"></i></span>
+                            <span><p>21M</p></span><span><p>Followers</p></span>
+                        </div>
+                        <div class="social-media">
+                            <span><i class="fab fa-twitter"></i></span>
+                            <span><p>6.5M</p> </span><span><p>Followers</p></span>
+                        </div>
+                    </div>
+                    <a href="#" class="share-btn">Connect 
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>                                 
+            </div>
+            <div class='container text-center mt-3' style='padding-top:2rem'>
+                <h1>Advantages</h1>
+                <p>This is advantages section</p>
+            </div>
+            <div class='cube_slider'>
+                <input type="radio" name="buttons" id="r1" checked>    
+                <input type="radio" name="buttons" id="r2">    
+                <input type="radio" name="buttons" id="r3">    
+                <input type="radio" name="buttons" id="r4">   
+                <div class="controls">
+                    <label for="r1"></label>
+                    <label for="r2"></label>
+                    <label for="r3"></label>
+                    <label for="r4"></label>
+                </div>    
+                <div class="container">
+                    <div class="image-container">
+                        <div class="box back">
+                            <img src="3dcubeslider/india.png" alt="">
+                            <h3>India</h3>
+                        </div>
+                        <div class="box top">
+                            <img src="3dcubeslider/usa.png" alt="">
+                            <h3>USA</h3>
+                        </div>
+                        <div class="box bottom">
+                            <img src="3dcubeslider/russia.png" alt="">
+                            <h3>Russia</h3>
+                        </div>
+                        <div class="box front">
+                            <img src="3dcubeslider/china.png" alt="">
+                            <h3>China</h3>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <div class="box front">
+                            <div class="content">
+                                <span class="number">01</span>
+                                <h3>China</h3>
+                                <p>China officially the People's Republic of China, is a country in East Asia. It is the world's most populous country, with a population of more than 1.4 billion. China spans five geographical time zones and borders 14 countries, the second most of any country in the world after Russia.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="box bottom">
+                            <div class="content">
+                                <span class="number">02</span>
+                                <h3>USA</h3>
+                                <p>The United States of America (U.S.A. or USA), commonly known as the United States (U.S. or US) or America, is a country primarily located in North America. It consists of 50 states, a federal district, five major unincorporated territories, 326 Indian reservations, and nine minor outlying islands.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="box back">
+                            <div class="content">
+                                <span class="number">03</span>
+                                <h3>India</h3>
+                                <p>India, officially the Republic of India (Hindi: Bhārat Gaṇarājya),[24] is a country in South Asia. It is the seventh-largest country by area, the second-most populous country, and the most populous democracy in the world.</p>
+                                <a href="#">Read More</a>
+                            </div>            
+                        </div>
+                        <div class="box top">
+                            <div class="content">
+                                <span class="number">04</span>
+                                <h3>Russia</h3>
+                                <p>Russia or the Russian Federation,[c] is a transcontinental country spanning Eastern Europe and Northern Asia. It is the largest country in the world by area, covering over 17,125,191 square kilometres (6,612,073 sq mi), and encompassing one-eighth of Earth's inhabitable landmass.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Signs -->
+            <div class='container text-center' style='padding:2rem 0'>
+                <h1>Signs</h1>
+                <p>This is signs section</p>
+            </div>
+            <section class='galleryItems'>
+                <!-- filter Items -->
+                    <div class="items">
+                        <span class="item active" data-name="all">All</span>
+                        <span class="item" data-name="dog">Dog</span>
+                        <span class="item" data-name="cat">Cat</span>
+                        <span class="item" data-name="lion">Lion</span>
+                        <span class="item" data-name="elephant">Elephant</span>
+                        <span class="item" data-name="camel">Camel</span>
+                    </div>
+                <!-- filter Images -->
+                <div class="gallery">
+                    <div class="image" data-name="lion"><span><img src="gallery/lion-1.jpg" alt="lion"></span></div>
+                    <div class="image" data-name="cat"><span><img src="gallery/cat.jpg" alt="alt"></span></div>
+                    <div class="image" data-name="dog"><span><img src="gallery/dog-1.jpg" alt="dog"></span></div>
+                    <div class="image" data-name="elephant"><span><img src="gallery/elephant-1.jpg" alt="elephant"></span></div>
+                    <div class="image" data-name="lion"><span><img src="gallery/lion-2.jpg" alt="lion"></span></div>
+                    <div class="image" data-name="camel"><span><img src="gallery/camel.jpg" alt="camel"></span></div>
+                    <div class="image" data-name="dog"><span><img src="gallery/dog-2.jpg" alt="dog"></span></div>
+                    <div class="image" data-name="elephant"><span><img src="gallery/elephant-2.jpg" alt="elephant"></span></div>
+                </div>
+            </section>
+            <!-- fullscreen img preview box -->
+            <div class="preview-box">
+                <div class="details">
+                    <span class="title">Category: <p></p></span>
+                    <span><i class="icon fas fa-times"></i></span> 
+                </div>
+                <div class="image-box"><img src="" alt=""></div>
+            </div>
+            <div class="shadow"></div>
+            <!-- 3D SLIDER -->
+            <div class='slider'>
+                <div class='container text-center text-white'>
+                    <h1>Signs</h1>
+                    <p>This is signs section</p>
+                </div>
+                <div class="slider-container">
+                    <div class="slide slide-1" style="background-image: url(slider/download-1.jpg)">
+                        <div class="content">
+                            <img class="circle" src="slider/dhoni.jpg" alt="person">
+                            <h2>MS Dhoni</h2>
+                            <p>Mahendra Singh Dhoni is an Indian professional cricketer who was captain of the Indian national cricket team in limited-overs formats from 2007-2017.</p>    
+                        </div>
+                    </div>
+                    <div class="slide slide-2" style="background-image: url(slider/download-2.jpg)">
+                        <div class="content">
+                            <img
+                                class="circle" src="slider/kohli.jpg" alt="person">
+                            <h2>Virat Kohli</h2>
+                            <p>Virat Kohli is an Indian international cricketer and former captain of the India national cricket team. He plays for RCB in the Indian Premier League.</p>
+                        </div>
+                    </div>
+                    <div class="slide slide-3" style="background-image: url(slider/download-3.jpg)">
+                        <div class="content">
+                            <img
+                                class="circle" src="slider/rohit.jpg" alt="person">
+                            <h2>Rohit Sharma</h2>
+                            <p>Rohit Gurunath Sharma is an Indian international cricketer who is the current captain of the Indian national team. A right-handed batsman.</p>
+                        </div>
+                    </div>
+                    <div class="slide slide-4" style="background-image: url(slider/download-4.jpg)">
+                        <div class="content">
+                            <img
+                                class="circle" src="slider/sachin.jpg" alt="person">
+                            <h2>Sachin Tendulkar</h2>
+                            <p>Sachin Ramesh Tendulkar is an Indian former international cricketer who captained the Indian national team. He is one of the greatest batsmen.</p>
+                        </div>
+                    </div>
+                    <div class="slide slide-5" style="background-image: url(slider/download-5.jpg) ">
+                        <div class="content">
+                            <img
+                                class="circle" src="slider/jadeja.jpg" alt="person">
+                            <h2>Ravindra Jadeja</h2>
+                            <p>Ravindrasinh Anirudhsinh Jadeja, commonly known as Ravindra Jadeja, is an Indian international cricketer. He is a left arm, off spin bowling all-rounder.</p>
+                        </div>
+                    </div>
+                    <div class="slide slide-6" style="background-image: url(slider/download-6.jpg)">
+                        <div class="content">
+                            <img
+                                class="circle" src="slider/rahul.jpg" alt="person">
+                            <h2>KL Rahul</h2>
+                            <p>Kananur Lokesh Rahul is an Indian international cricketer. He is the current vice-captain of the India national cricket team in all formats. </p>
+                        </div>
+                    </div>
+                    <div class="buttons-container">
+                        <button class="arrow left">
+                            <i class="fa fa-arrow-left"></i>
+                        </button>
+                        <button class="arrow right">
+                            <i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>                
+            </div>
+            <div class='container text-center' style='padding:2rem 0'>
+                <h1>Section</h1>
+                <p>This is a section</p>
+            </div>
+            <div class='imageGrid'>
+                <div class="container">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+                        <div class="card_title">Red Ferrari</div>
+                        </div>
+                        <div class="card">
+                        <img src="https://images.unsplash.com/photo-1501066927591-314112b5888e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80">
+                        <div class="card_title">Yellow Benz</div>
+                        </div>
+                        <div class="card">
+                        <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80">
+                        <div class="card_title">Stylish KTM</div>
+                        </div>
+                        <div class="card">
+                        <img src="https://images.unsplash.com/photo-1607615640588-c49a4bd20a5c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80">
+                        <div class="card_title">LAMBORGHINI Logo</div>
+                        </div>
+                        <div class="card">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80">
+                        <div class="card_title">Red Bike</div>
+                        </div>
+                    </div>            
+            </div>
+            <footer>
+                <div class='subscribe'>
+                    <h4>Sign Up For Free</h4>
+                    <p>get your daily astrology, daily lovescope and daily tarot by email</p>
+                    <div class="sbox">
+                        <input type="text" placeholder="Enter your email here">
+                        <button class='btn btn-primary'>Subscribe</button>
+                    </div>
+                </div>
+                <div class='footer'>
+                    <div class='footer1'>
+                        <img loading='lazy' src='footer/footer_logo.png' class='img-fluid'>
+                        <div class='num'>+91-123-456-7890</div>  
+                        <p>Donec id elit non mi porta gravida at eget metus. Donec id elit non Vestibulum id ligula porta felis euism od semper.</p>  
+                        <button>Read More</button>
+                        <div class='socialIcons'>
+                            <a href='#'><i class='fa-brands fa-facebook'></i></a>
+                            <a href='#'><i class='fa-brands fa-twitter'></i></a>
+                            <a href='#'><i class="fa-brands fa-youtube"></i></a>
+                            <a href='#'><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class='footer2'>
+                        <h4>Our Services</h4><br>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> About Us</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Our Services</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Products List</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Cart</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Checkout</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Blog</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Contact Us</a></span>
+                        </div>
+                    </div>
+                    <div class='footer3'>
+                        <h4>Forecast</h4><br>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Aries</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Taurus</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Gemini</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Cancer</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Leo</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Libra</a></span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-right" aria-hidden="true"><span></i><a href='#'> Scorpio</a></span>
+                        </div>
+                    </div>
+                    <div class='footer4'>
+                        <h4>Download App</h4>
+                        <p>Download Our Mobile App</p>
+                        <img loading='lazy' src='footer/App-Store.png'>
+                        <img loading='lazy' src='footer/Google-Play.png'>
+                    </div>
+                </div>
+                <div class='copyRight text-center container-fluid'>
+                    <span>Copyright © 2018. All Rights Reserved - Design By </span><span><a href='#'>  Template bazaar</a></span>
+                </div>
+            </footer>
+        </div>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--===== OWL CAROUSEL =====-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script><script  src="./script.js"></script>
+        <!--===== BOOTSTRAP =====-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--===== JQUERY =====-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
